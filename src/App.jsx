@@ -1,8 +1,11 @@
-import { useState } from 'react'
+import { useState, lazy } from "react"
 import './App.css'
-import Header from './Header'
-import Sidebar from './Sidebar'
-import Home from './Home'
+
+ 
+const Header = lazy(()=>import("./Header")) 
+const Sidebar = lazy(()=>import("./Sidebar")) 
+const Home = lazy(()=>import("./Home")) 
+
 
 function App() {
   const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
