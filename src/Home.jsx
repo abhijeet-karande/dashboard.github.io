@@ -2,7 +2,7 @@ import React from 'react'
 import Example from './Bar';
 import Example1 from './pi';
 import 
-{ BsFillArchiveFill,  BsPeopleFill, BsHandbagFill,BsSearch,BsChevronDown }
+{   BsCurrencyRupee, BsHandbagFill,BsSearch,BsChevronDown,BsWallet2 }
  from 'react-icons/bs'
  import { TbNotes,TbArrowNarrowDown,TbArrowNarrowUp} from "react-icons/tb";
 
@@ -23,7 +23,7 @@ function Home() {
         <div className='main-cards'>
             <div className='card'>
                 <div className='card-inner'>
-                    <BsFillArchiveFill className='card_icon'/>
+                    <BsCurrencyRupee className='card_icon'/>
                     <h3>Earning</h3>
                 </div>
                 <div> 
@@ -43,7 +43,7 @@ function Home() {
             </div>
             <div className='card'>
                 <div className='card-inner'>
-                    <BsPeopleFill className='card_icon'/>
+                    <BsWallet2 className='card_icon'/>
                     <h3>Balance</h3>
                 </div>
                 <h1>$2.4k</h1>
@@ -63,10 +63,13 @@ function Home() {
 
         
         <div className='charts'>
-              
-              <Example/>
-              <Example1/>
-
+                <div className='charts-pi'>
+                    <Example1/> 
+                </div>
+                <div className='charts-bar'>
+                   <Example/> 
+                </div>
+                 
         </div>
         
 

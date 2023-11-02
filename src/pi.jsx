@@ -66,7 +66,7 @@ const Example1 = () => {
         {/* <span className='space-words'>customers</span> */}
     
         <ResponsiveContainer width="100%" height="100%">
-            <PieChart width={400} height={400}>
+            <PieChart width={200} height={200}>
                 <Pie
                 activeIndex={activeIndex}
                 activeShape={renderActiveShape}

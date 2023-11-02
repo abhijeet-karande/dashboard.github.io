@@ -92,7 +92,7 @@ const Example = () => {
   const activeItem = data[activeIndex];
 
   return (
-    <div style={{ width: '100%' }}>
+    <div style={{ width: '80%' }}>
          <span className='space-words'>Overviwe</span>
          <span className='space-words'>quaterly<BsChevronDown  className='icon'/></span>
         
@@ -102,7 +102,7 @@ const Example = () => {
       </h2> */}
       <h5>Monthly Earning</h5>
       <ResponsiveContainer width="100%" height={100}>
-        <BarChart width={150} height={40} data={data}>
+        <BarChart width={100} height={40} data={data}>
           <Bar dataKey="uv" onClick={handleClick}>
             {data.map((entry, index) => (
               <Cell
